@@ -11,6 +11,6 @@ E' stata aggiunta una condizione nei parametri per l'aggiunta al database in mod
 
 - **removeCustomer**: rimuove un cliente dal relativo database. Anche qui avevo provato un po' a vedere se fosse possibile fare una cancellazione condizionata, vedendo se era possibile eliminare non in base all'id (chiave primaria) ma in base a nome+cognome. Ho provato anche a fare prima una "scan" del database per poi effettuare la delete sull'id dell'unico campo restituito. Non ci son riuscito e mi son limitato a fare una delete basandomi sulla chiave primaria, anche cercando a fondo su internet sembra proprio che non ci siano alternative. 
 
-Spero di essere riuscito a implementare il più possibile quello che vi aspettavate. Purtroppo sono dovuto partire da 0 con ognuna di queste tecnologie ma ho cercato di fare il mio meglio. 
+Spero di essere riuscito a implementare il più possibile quello che vi aspettavate. Purtroppo sono dovuto partire da zero con ognuna di queste tecnologie ma ho cercato di fare il mio meglio. 
 
 Per quanto riguarda il discorso **test** uno dei modi che suggerivano su internet da fare era quello di (dopo il deploy) usare la funzione "invoke" del framework serverless passando file JSON come input. Nel file testCommand.sh ci sono tutti i comandi da lanciare per fare i test e nella cartella "dataInput" ci sono i JSON che ho preparato come input per verificare il funzionamento. 
